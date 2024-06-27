@@ -1,0 +1,138 @@
+/* style.css */
+
+/* Incluir a fonte Dubiel */
+@font-face {
+  font-family: 'Dubiel';
+  src: url('fonts/Dubiel.ttf') format('truetype');
+}
+
+/* Definir Arial como fonte padrão */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Footer text color */
+.footer-text {
+color: #117c9788; /* Troque por qualquer cor que você desejar */
+}
+
+/* Centralize the brand */
+.navbar .navbar-brand {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+font-family: 'Dubiel', sans-serif; /* Aplicar a fonte Dubiel */
+font-size: 2.5rem; /* Aumentar o tamanho do texto */
+}
+
+/* Fullscreen video background */
+#background-video {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1;
+transform: translate(-50%, -50%);
+background-size: cover;
+}
+
+/* Carousel styling */
+.carousel {
+min-height: 500px; /* Altura mínima para o carrossel */
+}
+
+/* Carousel image styling */
+.carousel-item img {
+max-height: 500px; /* Ajuste a altura máxima conforme necessário */
+object-fit: cover; /* Manter a imagem proporcional e cobrir a área */
+object-position: middle; /* Cortar a imagem de cima para baixo */
+}
+
+/* Carousel caption text styling */
+.carousel-caption h5 {
+color: #ffffff; /* Troque por qualquer cor que você desejar */
+font-size: 2rem; /* Tamanho do texto do h5 */
+}
+
+.carousel-caption p {
+color: #ffffff; /* Troque por qualquer cor que você desejar */
+font-size: 1.25rem; /* Tamanho do texto do parágrafo */
+}
+
+/* Navbar background color */
+.navbar {
+background-color: #053b4988 !important; /* Cor de fundo do navbar */
+}
+
+/* Navbar brand color */
+.navbar-brand {
+color: #ffffff !important; /* Cor do texto da marca */
+}
+
+/* Navbar links color */
+.navbar-nav .nav-link {
+color: #000000 !important; /* Cor dos links do navbar */
+}
+
+/* Highlight the Login button */
+.navbar-nav .nav-item .login-btn {
+background-color: #06576B !important; /* Cor de fundo do botão Login */
+border-color: #06576B !important; /* Cor da borda do botão Login */
+color: black !important; /* Cor do texto do botão Login */
+}
+
+/* Highlight the Cadastre-se link */
+.navbar-nav .nav-item .nav-link.active {
+color: black !important; /* Cor do texto do link Cadastre-se */
+font-weight: bold; /* Negrito no texto do link Cadastre-se */
+}
+
+header .btn-light {
+background-color: #f8f9fa !important;
+color: #000000 !important;
+border: none;
+}
+
+/* Header styling */
+header.bg-primary {
+  background: linear-gradient(135deg, #053b49 0%, #06576b 100%);
+  color: #ffffff !important;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header.bg-primary::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent);
+  transform: rotate(-45deg);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+header .btn-light {
+  background-color: #f8f9fa9f !important;
+  color: #000000 !important;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+}
